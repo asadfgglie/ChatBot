@@ -3,7 +3,7 @@
 admin
 dev.env
 /model/checkpoint-*
-
+test.py
 /log
 /tmp
 ChatBot.code-workspace

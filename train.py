@@ -63,6 +63,9 @@ logger.info('Import done.')
 
 hub_login.login(os.environ.get('HF_TOKEN'))
 
+
+# ====================================================================================
+# train args
 args = TrainingArguments(
     eval_steps=5000,
     num_train_epochs=2,
@@ -86,6 +89,8 @@ args.tokenizer_path_or_name = 'bert-base-chinese'
 args.model_path_or_name = 'ckiplab/gpt2-tiny-chinese'
 args.show_args = False
 args.datasets = ['asadfgglie/lccc_base_zh', {'test': 'validation', 'train': 'train'}]
+# ===================================================================================
+
 args.model_train_step_from = 0
 if args.show_args:
     logger.info("Training/evaluation parameters \n%s", str(vars(args)))
