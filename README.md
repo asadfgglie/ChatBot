@@ -21,9 +21,9 @@
 
 因此還沒有太多數據
 
-訓練loss: 3.478
-
-驗證perplexity: 31.20429039001465
+### 2023_03_19_dialog_gpt2-tiny
+* 訓練loss: 3.478
+* 驗證perplexity: 31.20429039001465
 
 詳細訓練過程數據可以參閱`/model/log`，以tensorbroad開啟即可查閱
 
